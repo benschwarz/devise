@@ -20,6 +20,10 @@ platforms :ruby do
     gem "mongoid", :git => "git://github.com/durran/mongoid.git"
     gem "bson_ext"
   end
+  group :couchrest do
+    gem "couchrest", "1.0.0"
+    gem 'couchrest_model', :git => 'git://github.com/couchrest/couchrest_model.git'
+  end
 end
 
 gem "warden", "0.10.7"
